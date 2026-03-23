@@ -29,8 +29,12 @@ With support for both permanent and temporary bans, integrated server-wide ban c
 1. Download the latest release
 2. Place the JAR file in your server's `plugins/` folder
 3. Start your server
-4. Configure the plugin in `plugins/BSoftware_Bans/config.yml` (optional)
-5. Restart your server
+4. **[Optional] Get your API Key:**
+   - Visit https://api.bsoftware.xyz/
+   - Create a new API key for your server
+   - This enables network-wide ban synchronization
+5. Configure the plugin in `plugins/BSoftware_Bans/config.yml` and add your API key (optional)
+6. Restart your server
 
 ### First Commands
 ```
@@ -96,10 +100,19 @@ The plugin creates a `config.yml` file on first run. All features can be customi
 
 - Ban messages (with player-specific placeholders)
 - Server name identification
-- Central API integration
+- Central API integration (requires API key from https://api.bsoftware.xyz/)
 - Database settings
 
 A well-commented default configuration is generated automatically.
+
+### Setting Up API Integration (Optional)
+To enable network-wide ban synchronization:
+1. Go to https://api.bsoftware.xyz/
+2. Create a new API key for your server
+3. Add the key to your `config.yml` under `database.central.api_key`
+4. Restart your server
+
+Without an API key, the plugin works perfectly fine for local bans only.
 
 ---
 
