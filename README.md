@@ -33,7 +33,7 @@ With support for permanent and temporary bans, IP-bans, mutes, and kicks, plus i
 2. Place it in your server's `plugins/` folder.
 3. Start your server.
 4. **Configure API (Optional):**
-    - Set your `api_url` and `api_key` in `plugins/BSoftware_Bans/config.yml`.
+    - Set your `api_key` in `plugins/BSoftware_Bans/config.yml`.
     - This enables network-wide synchronization for bans and IP-bans.
 5. Customize your messages in the `config.yml`.
 6. Restart your server to apply the changes.
